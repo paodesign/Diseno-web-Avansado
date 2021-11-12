@@ -1,0 +1,51 @@
+/* Responsive Desing y Mobile First
+capacidad de adaptaptarse a la pantalla.
+
+Mobile First(Primero el móvil) :  consiste en diseñar los elementos de una pagina para que estén orientados por defecto a dispositivos móviles de pantallas mucho más pequeñas.
+Primero definir la pantalla movil mas pequena con la que vamos a trabajar.
+
+* empezar con la vercion movil mas pequeña.
+* definimos los media query que queramos. 
+* usar displays y tamaños con %
+* definir un background diferente en cada medida como guia
+* calcular el % de los tamaños teniendo en cuenta e margen de las mismas
+
+
+} */
+body {
+    background: orange;
+}
+div {
+    width: 80%;
+    height: 150px;
+    margin: 8%;
+    display: inline-block;
+    background: white;
+}
+/* tamaño de pantalla de celular un poco mayor al definida el Mobile first */
+@media screen and (min-width: 480px) {
+    body{
+        background: green;
+    }
+    
+}
+/*  tamaño de tablet */
+@media screen and (min-width: 767px) {
+    body{
+        background: rgb(0, 109, 128);
+    }
+    div {
+        width: 40%;
+        margin: 4%;
+    }
+}
+/* tamaño de ua pantalla de escritorio */
+@media screen and (min-width: 950px) {
+    body{
+        background: rgb(66, 0, 128);
+    }
+    div {
+        width:28%;
+        margin: 2%;
+    }
+}

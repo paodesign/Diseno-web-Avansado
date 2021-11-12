@@ -1,0 +1,45 @@
+/*
+Sombras :
+
+La estructura de las sombras aplicadas a cajas(box-shadow) o a texto (text-shadow) tiene 4 valores:
+    * desplazamientoHorzontal(arriba y abajo)
+    * desplazamientoVertical(izq y dcha)
+    * difuminado(0 es solido)
+    * color
+Añadiendo el valor "inset" como primer valor del conjunto box-shdow seguido de la estructura común, establecemos la sombre de forma interna en el elemento al que se la queremos asignar.
+
+
+
+
+
+ */
+
+div {
+    height: 200px;
+    width: 100px;
+    background: rgb(255, 255, 255);
+    margin: 50px;
+    text-align: center;
+    border: 1px solid black;
+    /* box-shadow: inset 10px 0px 5px red ; */
+    /* box-shadow: 10px 0px 0px red,
+                20px 0px 0px green,
+                20px 0px 0px rgb(253, 123, 0),
+                30px 0px 0px rgb(6, 0, 128),
+                40px 0px 0px rgb(102, 0, 128); */
+    box-shadow: 1px 1px 0px rgb(97, 97, 97),
+                2px 2px 0px rgb(111, 111, 111),
+                3px 3px 0px rgb(141, 141, 141),
+                4px 4px 0px rgb(155, 155, 155),
+                5px 5px 0px rgb(5, 5, 5),
+                6px 6px 0px rgb(5, 5, 5);
+
+}
+
+p{
+    position: relative;
+    top: 70px;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px rgb(53, 0, 112)  ;
+    color: white;
+}

@@ -1,0 +1,135 @@
+/* Tecnica de camuflaje: para ocultar la gracia del efecto
+* camuflaje ppor color
+* camuflaje por trasparenca
+* camuflaje por tamaño
+
+ */
+
+div {
+  font-family: Arial;
+  background: #a8cf45;
+  margin: 20px 20px;
+  text-align: center;
+  font-weight: bolder;
+  padding: 15px 30px;
+  width: 80px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ******* camuflaje ppor color ****** */
+.triangulo_lateral {
+  -webkit-transform: translateX(0);
+}
+
+.triangulo_lateral:before {
+  content: "";
+  -webkit-transition-duration: 0.3s;
+
+  border-style: solid;
+  border-width: 15px 15px 15px 0px;
+  border-color: transparent #a8cf45 transparent transparent;
+
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.triangulo_lateral:hover::before {
+  left: -13px;
+}
+
+
+.triangulo_fijo {
+  -webkit-transform: translateX(0);
+  -webkit-transition-duration: 0.3s;
+}
+
+.triangulo_fijo::before {
+  content: "";
+  -webkit-transition-duration: 0.3s;
+
+  border-style: solid;
+  border-width: 0px 15px 15px 15px;
+  border-color: transparent
+                 transparent 
+                 #a8cf45
+                 transparent;
+
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -15px;
+}
+
+.triangulo_fijo:hover{
+  -webkit-transform: translateY(15px);
+}
+
+.triangulo_fijo:hover::before {
+  top: -13px;
+}
+
+/* ****** camuflaje por tamaño  ****** */
+
+.esquina_pagina{
+  -webkit-transform: translateX(0);
+}
+
+.esquina_pagina::before{
+  content: "";
+
+  width: 0;
+  height: 0;
+
+  background: -webkit-linear-gradient(
+    45deg, white 45%, #aaa 50%,
+    #ccc 60%, white);
+
+  -webkit-transition-duration: 0.3s;
+  
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+
+}
+
+.esquina_pagina:hover::before{
+  width: 35px;
+  height: 35px;
+}
+
+/* ****** camuflaje por transparencia ****** */
+
+.sombra_fija {
+  -webkit-transform: translateX(0);
+
+}
+
+.sombra_fija::before{
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 10px;
+  left: 5%;
+  top: 100%;
+
+  background: -webkit-radial-gradient(
+      center, ellipse, 
+      rgba(0,0,0,0.35) 0%,
+      rgba(0,0,0,0) 80%
+  );
+  -webkit-transition-duration: 0.3s;
+  opacity: 0;
+
+}
+
+.sombra_fija:hover {
+  -webkit-transform: translateY(-5px);
+}
+
+.sombra_fija:hover::before {
+  -webkit-transform: translateY(5px);
+  opacity: 1;
+}

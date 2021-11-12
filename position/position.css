@@ -1,0 +1,90 @@
+/* Position
+  son las caracteristica css que establecen en que punto de la pagina comenzara a mostrarse o posicionarse.
+  * Static : es el valor por defecto de los elementos, eso quiere decir que los elementos se comenzarar a posicionar o pintar desde la esquina derechea del elemento padre. no tienen en cuenta 
+  los puntos de coordenadas : se acomodan siempre en el mismo punto de referencia. y acomada abajo al elemanto que sigue. 
+
+  - Puntos de referencia o coordenadas :  desde donde se comiensa a posicionar el elemento. son :  top , right, left, bottom.
+  - Valores punto de coordenada : pueden ser positivos o negativos.
+
+  - Punto de origen : esquina superior derecha, desde alli se cuentas todos los puntos de coordenada.
+
+  * Relative : puedo relativizar el elemento hijo con respecto al padre. es decir le puedo dar puntos de coordenadas para acomodarlo donde prefiera.
+
+  * Absolut : no existe para los restos de los elemntos, nacen en el punto de origen. cuando usamos absolut hay que tener en cuenta que el padre tiene que tener position relative o static  sino toma al
+   body como padre y cuenta desde alli.
+
+  * Fixed : siempre posiciona sus coordenadas con respecto al body. queda fijado es muy utiles para los munes.
+
+  van combinadas: Float y Clear
+
+  Float : flotar y se le puede dar diferentes coordinadas. Se van posicionendo uno alado del otro, ocupando los epacios que quedan.
+  Clear : limpia el float en el sentido que vaya el float y el contrario para hacegurarnos que se limpie todo(both) Deja de ser inlfluenciado por el float.
+
+  Visibilidades :
+
+  * z-index : Posicion en el eje z. indica la prufundidad que tiene un elemento respecto a otro en el orden del eje z. Siempre va con un position. Posicionar mas adelante ciertos elementos.
+  siempre va con una posicion relative.
+  cuanto mas alto el numero mas adelate esta.
+
+  * overflow : elimina todo lo que sale fuera del elemento padre. se usa en los efectos.
+
+  * visibility : oculta el elemento pero no elimina el lugar que ocuapda el mismo. no esta visible pero si tiene su jererquia.
+
+  * opacity : da la transparencia que va a tener el elemento 1 es solido 0 es trasparente. no lo elimina, mantienen su pasicion.
+
+
+
+
+
+ */
+.padre {
+  width: 250px;
+  height: 2500px;
+  margin: 25px;
+  background: orange;
+  overflow: hidden;
+
+  /* position: relative; */
+}
+
+/* .padre > div {
+  display: inline-block;
+} */
+
+
+.hijo2 {
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: absolute;
+
+}
+
+.hijo1 {
+  width: 50px;
+  height: 50px;
+  background: red;
+  display: inline-block;
+  position: relative;
+  z-index: 99;
+  top: -25px;
+
+  /* position: fixed;
+  top: 0px;
+  left: 0px; */
+}
+
+/* .hijo3 {
+  width: 50px;
+  height: 50px;
+  background: blue;
+
+  clear: both;
+} */
+
+.oculto {
+  visibility: hidden;
+}
+.transparencia {
+  opacity: 0.2;
+}

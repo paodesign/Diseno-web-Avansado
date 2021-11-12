@@ -1,0 +1,2 @@
+Selectores en Css:
+	*elergisr a cuales darle caracteristicas

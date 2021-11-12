@@ -1,0 +1,95 @@
+/* Colores: diferentes tipos
+    * Con palabras reservadas: colores ya tienen un nombre propio, que cuando se escribe se hace referencia al mismo.
+    No todos los colores tiene su palabra reservada. Los colores mas habituales tiene una palabra reservada.  
+
+    nombre Css  -> Lima
+    codigo  HEX RGB  -> 00 FF 00
+    codigo decimal RGB -> 0 255 0 (este codigo pude ir desde el 0 al 255) numeros binarios y bits
+
+    LOS COLORES QUE SE TERMINAN VIENDO EN UNA PANTALLA ES UNA MEZCLA DE DIFERENTES CANALES DE LUZ. Las mezclas son diferantes a los colores normales.
+
+    * RGB (Red, Green, Blue)
+
+        codigo decimal RGB:
+    base decimal(0 al 9) = 10 digitos
+    Es la mezcla de colores, indicando cuanto tiene de rejo, cuanto tiene de verde y cuanto tiene de azul.
+    seria como tener tres linternas prendidas una ce cada loror e ir viendo que colores se forman condo las vamoe encimando entre ellas. 
+    de la:
+        * mezcla de rojo y verde = amarillo
+        * mezcla de azul y rojo = fusia
+        * mezcla de  azul y verde = turquesa.
+        * mezcla de azul, verde y rojo en su maxima exprecion  = blanco -> es el resultado de la maxima expecion es luz (255, 255, 255)
+        * mezcla de azul, verde y rojo en su minima exprecion = negro -> la ausencia de color es el negro (0, 0, 0)
+
+     rgb (   ,  ,  ) se indican los 3 valores, van del 0 al 255
+
+        codigo  HEX RGB:
+    Funciona igual que el codigo decimal de rgb(red, green, blue) dos digitos para cada uno de ellos. 
+    Cambia la forma de enumerarlo, en base 16(0 al 9 y letras A a F) = 10 numeros y 6 letras.(# dos digitos para cada espacio sin separacion, total 6 digitos)
+    #483005
+    #000000 = negro se puede simplificar a #000 cuanto tiene lods dos digitos repetidos se puede simplificar a uno
+    #FFFFFF = blanco (FF = 255) se puede simplificar a #FFF
+
+        RGB porcentual:
+    Rgb permite establecer los valores utilizando porcentaje, para indicar cuanta luz de cada linterna quieres poner.
+    rgb(50%, 20%, 75%) siria equivalente rgb(127, 51, 191) se calcula para saber el equivalente en numeros 255*0.5 = 127.5| 255*0.2 =51 | 255*0.75 = 191.25
+    100% = 255
+
+    * Colores con HSL:
+    Hsl(Hue, Saturation, Lightness) = Matriz o  Tono del color, saturacion, lumisosisa o iluminacion. Es un sistema diferente, primero se elige el tono del color, la cantidad de saturacion y la cantidad de iluminacion que queremos.
+        * Hue se mide engrados desde 0° a 300°
+        * Saturation va de 0 a 1 -> defina la cantida de gris que habra en ese color(0 es gris y 1 nada de gris) van en porcentaje (0% mucho gris, 100% nada de gris)
+        * Lightness va 0 a 1 (0 es negro menos luz y 1 es blanco mas luz) van en porcentaje (0% nivel mas bajo de luz, 100% nivel mas alto de luz)
+
+    hsl(hue, saturation, lightness)
+    hsl(240, 100%, 50%)
+    colores: 
+        * 0° = rojos
+        * 60° = amarillos
+        * 120° = verdes
+        * 180° = turquezas
+        * 240° = azules
+        * 300° 0 fucsias
+
+    * Colores con Trasparencia:
+    rgba  = hsla
+se agrega el canal alpha, pude ir el 0 al 1( 1 = solido, 0 = absolutamnte trasparente)
+rgba(red, green, blue, alpha)
+hsla(Hue, saturation%, lightness%, alpha)
+
+ */
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.rgb_transparencia {
+    background-color: rgba(127, 51, 191, 0.5);
+}
+
+.hsl_transparencia {
+    background-color: hsla(120, 100%, 50%, 0.5);
+}
+
+.reservadas {
+    background-color: lime;
+}
+
+.luzRGB {
+    background-color: rgb(0,255, 0);
+}
+
+.hex {
+    background-color: #0F0 ;
+}
+
+.porcentual {
+    background-color: rgb(0%, 100%, 0%);
+}
+
+.hsl {
+    background-color: hsl(120, 100%, 50%);
+}

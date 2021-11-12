@@ -1,0 +1,52 @@
+/* Pseudo clases
+
+
+
+ */
+
+body {
+   background: khaki; 
+   font-size: 12px;
+}
+
+div {
+    margin: 10px;
+}
+
+
+div *{
+    border: 1px solid black;
+    width: 80px;
+    height: 50px;
+    background: white;
+    display: inline-block;
+}
+
+div a:nth-of-type(odd) {
+    background: orange;
+}
+
+/* 
+
+:nth-child(N) : numero que oculpa como hijo (N = numero)
+:nth-last-child(N) :empieza desde el ultimo
+
+:nth-of-type(N) : tipo 
+:nth-last-of-type(N) : el ultimo tipo
+
+:first-of-type : primero de ese tipo
+:last-of-type :  primero de ese tipo
+:only-of-type : se marca ese tipo solamente si en el unico
+:empty : vacio
+:not(S) : se marca el elemnto que no sea el selector que pasamos por parametro.
+
+:last-child : ultimo hijo
+:only-child : unico hijo
+:root : elemento raiz
+:enable : activados
+:disable : desactivados
+:checked : checkbox o radius button que esten activados
+
+even / odd : pares / impares
+
+*/

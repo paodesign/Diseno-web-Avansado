@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- como enlazar css: se puede enlazar un css a varios html. 3 formas de enlazar
+    1 - Enlazar en el head un archivo externo: <link rel="stylesheet" href="style.css">
+    2 - Dentro del Html: solo se a´plica en este archivo, si sin pequeños archivos.
+             <style> 
+                div {
+                    width: 50px;
+                    heigth: 50px;
+                    background: red;
+                    margin: 20px;
+                }
+            </style>
+    3 - Dentro de cada elemento: <div style="width: 50px; height: 50px; background: red;
+    margin: 20px;"></div>
+     solo se usa en youtube.
+    -->
+    <!-- siempre usar normalize antes que nada -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="modernizr-custom.js"></script>
+    <title>Diseño Web</title>
+    <!-- informacion de la pagina
+        enlazar archivo css
+        enlazar archivo js
+        añadir fuentes externas
+        metadatos(keywords, descriptions, robots, author, owner) -->
+</head>
+
+<body>
+    <header>
+        <!-- 
+            logotipo (figure)
+            nombre principal -> H1
+            nav
+            banner
+         -->
+        <hgroup>
+            <h1> Titulo principal y con mayor importancia Seo(solo uno por pagina h1)</h1>
+            <h2> Titulo secundario relacionado con el titulo principal.(Mejor busqueda)</h2>
+        </hgroup>
+        <h3>Título h3</h3>
+        <h4>Título h4 (usar la cantidad que quieras.)</h4>
+        <h5>Titulo h5</h5>
+
+        <nav>
+            <ul>
+                <li><a href="https://paodesign.github.io/codeit/">se abre en la misma página</a></li>
+                <li><a target=”_blank” href="https://paodesign.github.io/codeit/">abre en otra pestaña</a></li>
+                <li><a href="#ejemplo"> Parte específica de la página</a></li>
+                <li><a href=”enlaces.html”> otra página interna</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p> <strong>Code it</strong>
+        es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+        estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)
+        desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+        No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando
+        esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales
+        contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus
+        PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+    <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio
+        mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de
+        las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen
+        parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem
+        Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios
+        web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de
+        los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el
+        estilo).</p>
+    <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio
+        mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de
+        las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen
+        parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem
+        Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios
+        web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de
+        los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el
+        estilo).</p>
+    <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio
+        mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de
+        las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen
+        parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem
+        Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios
+        web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de
+        los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el
+        estilo).</p>
+    <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio
+        mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de
+        las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen
+        parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem
+        Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios
+        web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de
+        los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el
+        estilo).</p>
+    <span>Es un hecho establecido hace demasiado tiempo(se usa para identificar el texto y darle estillo)</span>
+    <p> <span>Es un hecho establecido hace demasiado tiempo</span> Es un hecho establecido hace demasiado tiempo que un
+        lector se distraerá con el contenido del texto de un sitio
+        mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de
+        las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen
+        parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem
+        Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios
+        web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de
+        los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el
+        estilo).</p>
+    <p id="ejemplo">Es un hecho <em> Code it corp </em> establecido hace demasiado tiempo que un lector se distraerá con
+        el contenido del texto de un sitio
+        mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de
+        las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen
+        parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem
+        Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios
+        web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de
+        los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el
+        estilo).</p>
+
+    <!-- etiquetas con peso semantico para definir las areas de la pagina-->
+    <section>
+        <h2>Titulo secundario</h2>
+        <!-- cuando usarlo al section: engloban un conjunto de elementos que ya estan integredos, todos relacionados entre si, son areas  mas globales con muchos elementos internos. 
+         conjunto de article-->
+    </section>
+
+    <article>
+        <h4>Titulo Articulo</h4>
+        <!-- es un unico elemento, formado por distintos elemento que parten del mismo padre conjuntamente forman un unico elemento. forman un unico post
+        son datos sueltos que por si solas no tienen sentido pero todos juntos forman un mismo elemento-->
+    </article>
+
+    <aside>
+        <!--  hablen de otro tema que esta relacionado, sugerencias que se le ofrece al usuario-. Informacion que tiene n que ver con el contenido pero no es el contenido. tiene relevancia mas pequeña para google. 
+        puede o no estar horizontal o vertical con en youtube-->
+    </aside>
+
+    <div>
+        <!-- agrupar otros contenidos sin nombre especificos,que no entran en las otras etiquetas. elementos que se agrupan en un bloque.-->
+    </div>
+
+    <footer>
+        <!-- pie de pagina, sirve para cerrar la pagina,link internos, redes sociales,contacto, marca registrada. poner uno solo al menos que  sea una pagina muy grande. -->
+    </footer>
+
+
+
+
+    <!-- añadir archivo js si es muy pesado o extensos dicho archivo -->
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+/*
+Fondo con imagen :
+Para posicionar el fondo de un elemento tenemos 3 opciones:
+    * border-box (desde el borde),
+    * padding-box (desde la zona del padding)
+    * content-box (desde la zona del contenido)
+
+
+
+
+ */
+
+div {
+    height: 200px;
+    width: 300px;
+    background: rgb(255, 255, 255);
+    margin: 50px;
+    border: 1px solid rgb(250, 3, 3);
+}
+
+.imagen{
+
+    /* background-repeat: no-repeat ;
+    background-repeat: repeat-x; */
+    /* poner marca de agua a la fotografia */
+    background: url("firma.gif"),
+    /* fondo */
+                url("garden.jpg");
+    background-repeat: no-repeat, repeat;
+    background-position: right bottom,
+                        center center;
+   
+}
+
+.degradados {
+    /* Degradado lineal */
+    /* background: -webkit-linear-gradient(
+        left 20deg,
+        blue 0%,
+        red 30%,
+        green 80%,
+        yellow 100%
+    ) ; */
+
+    /* Degradado circular */
+    background:  -webkit-radial-gradient(
+       center,
+       blue 0%,
+       red 30%,
+       green 80%,
+       yellow 100%
+    ) ;
+}
+

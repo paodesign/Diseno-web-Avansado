@@ -1,0 +1,24 @@
+/* Display
+  *los elementos traen por defecto display block 
+
+  diferentes display :
+
+  * block : viene por defecto ocupa todo el ancho.
+
+  * inlene-block : ocupa solo el lugar que ocupa el texto, ese es el largo. Y se van poniendo uno alado del otros siempre que haya espacio. Se trebajan en diferentes lineas.
+  se usa mucho en responsive desing.
+
+  * inline : se corponta como una sola linea, un solo block de linea.
+
+  * None : oculta, se usa mas en responsive desing. Ocualtamos ciertos elementos.
+
+ */
+p {
+    border: 2px solid black;
+    background: orange;
+    display: inline;
+
+}
+p#ghost {
+  display: none;
+}

@@ -1,0 +1,63 @@
+/* Modelo de Caja:
+sirve para determinar el tañano y espacio que ocupara dentro de la pagina.
+hay muchos atributos que se estan sumando.
+    Factores:
+    * Content: ej es un div que se creo, dentro esta el contenido.
+    * Padding: es un borde interno que se le hace al elemento. Asia adento. modificar el elemento consigo mismo.
+    * Border: es una linea que rodea el elemento.
+    * Background-image/ background-color: es el fonfo o imagen que se usa, no afecta al tamaño del eslemento. Simplemente es el fondo.
+    * Margin: por fuera del borde del elemento esta el margin, que separa el elemento con respecto a los del alrededor.
+
+    los elementos se suman los factores de los elentos: elemento mide 100px + 1px*2 + 20px*2 + 10px*2 = 162
+
+Anchuras: width / altura: height
+    * min-width: es el minimo que va a tomar de anchura
+    * min-height: es el minimo que va a tomar de altura
+    * max-width: es el maximo que va a tomar
+    * max-height: es el maximo que va a tomar
+
+Margin:
+    * Margin un solo valor: 20px;
+    Ese mismo valor se aplica en todad las direcciones.
+    * Margin un dos valores: 20px 50px;
+    Primer valor se aplica arriba y abajo osea 20px, y el segundo valor laterales 50px.
+    * Margin especifico para cada lado: 20px 50px 100px 3px;
+    Se aplica cada valor en el mismo orden de las agujas del reloj. Arriba 20px, derecha 50px, abajo 100px , izquierda 3px.
+    Tambien los margenes pueden ser colocados en porcentajes %, eso se ajusta al tamaño de la pantalla.
+    
+
+
+ */
+
+/*
+Primer ejemplo:
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+}
+
+p {
+    padding: 5px;
+}
+
+a {
+    width: 200px;
+    height: 100px;
+    border: 1px solid red;
+    padding: 30px;
+} */
+
+div {
+    width: 50%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+div.dimension {
+    min-width: 400px;
+    max-width: 550px;
+    margin: 20px 50px 100px 3px;
+}

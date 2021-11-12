@@ -1,0 +1,81 @@
+header h2,
+h3 {
+    color: green;
+}
+/* 
+p#azul {
+    color: blue;
+}
+
+.prueba {
+    color: red;
+}
+
+.grande {
+    font-size: 20px;
+} */
+
+/* selector Adyasente elemento1 + elemento2, que sean hermanos del elemento1. se usa el simbolo +. sirve para cambiar todos menos el primero.  */
+/* p+p {
+    font-weight: bolder;
+} */
+
+/* padre e hijo: es un hijo : p es un hijo de div. > este simbolo para decir quien es el hijo*/
+div > p {
+ color: blue;
+}
+
+/* elementos hermanos menores */
+p ~ p {
+    color:rgb(36, 170, 170);
+} 
+
+/* Selectore de atrubutos y colision de Estilos */
+/* 
+h2[title] {
+    color: red;
+} */
+
+/* sirve para buscar ~="texto" que contenga ese texto */
+h2[title ~= "cabecera"]{
+    color: rgb(255, 0, 179);
+}
+
+/* no es necesario crear una clase porque ponemos usar ese identificador fe lenguaje*/
+h2[lang |= "es"]{
+    color: chocolate;
+}
+
+/* colision de estilos: el orden de como se aplica
+            1- css del navegador
+            2- css del usuario
+            3- archivos css enlazados en el orden en que se hayan añadido
+            4- propiedades que se heredan
+            5- propiedades propias del elemento
+            6- clases asignadas, y en el mismo orden
+            7- identificador
+            8- !important
+*/
+/* heredan todos los div */
+div {
+    font-size: 50px;
+}
+/* las propiedades propieas sobre escriben a las heredades, en este caso las propiedades heredades de div son sobrescritas por las propias del elemento article. */
+article p {
+    font-size: 20px;
+}
+
+/*  en el orden en el que esten escritos es como se van a imponer, en este caso la clase rojo es sobrescrita por la naranja */
+/* !important sobrescribe a todo lo anterior dandele prioridad a dicha propiedad aplicada, es con el id unico por propiedad. es exclusivo.*/
+.rojo {
+    color: red !important;
+}
+
+.naranja {
+    color: orange;
+}
+
+/* los identificadodes id sobre escriben a las clases, en es caso la clase naranja es sobrescrita por el #gris */
+#gris {
+    color: gray;
+}

@@ -1,0 +1,22 @@
+/* 
+Prefijos: especificar para que puede reproducirse en ciertas propiedades, por cada navegador se hace una linea especifica para el mismo con sus particularidades.
+Para hacer que sea compatible para todos los navegadores tenemos que colocar un prefijo por cada linea que queramos compatibilizar.
+Para saber si es compatible se utiliza: Can i use -> nos muestra las compatibilidades de los diferentes navegadores    
+
+-webkit-  Goocgle, Chrome, Safari, Nave
+-moz- Firefox
+-o-  Opera
+-ms-  Internet Explore, Edge
+-khtml- Konqueror
+
+*/
+header {
+    width: 100%;
+    height: 200px;
+    background: -webkit-linear-gradient(top, #000, #fff 100%);
+    /* Internet Explorer -ms- */
+    background: -ms-linear-gradient(top, #000, #fff 100%);
+    /* Safari 4-5, Chrome 1-9
+    background: -webkit-gradient(liner, left top, left bottom, color-stop(0%,))
+*/
+}

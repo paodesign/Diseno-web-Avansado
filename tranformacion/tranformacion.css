@@ -1,0 +1,61 @@
+/*
+Transformacion: 
+transform: tipo(cantida);
+transform: tipoX(cantida);
+transform: tipoY(cantida);
+
+usan casi siempre para skew, translate y scale:
+
+transform: tipo(cantidaX, cantidaY);
+transform: tipo() tipo() tipo()...;
+
+* rotate(rotar)
+* skew(deformarlos)
+* translate(colocarlo en otro sitio, dessplazamiento)
+* scale(escala)
+
+deg = grados
+
+Diferencia entre el transform y  el posicion con coordenadas : 
+* transform  no afecta al flojo de colocacion del resto de elementos,
+
+
+Transiciones : 
+* transition-property: all; propiedades
+* transition-duration: 3s; tiempo de transicion en tre una imagen y otra
+* transition-timing-function: linear; linear viene por defecto
+     * ease,
+     * ease-in,
+     * ease-out,
+     * ease-in-out
+     * linear
+
+ */
+
+div {
+  height: 200px;
+  width: 200px;
+  background: orange;
+  margin: 50px;
+  border: 2px solid rgb(0, 0, 0);
+
+  /* girar, siempre gira en el sentido de las agujas del reloj  */
+  /* transform: rotate(15deg); */
+  /* punto de rotacion  */
+  /* transform-origin: top right; */
+  /* transform-origin: 5% 20%; */
+
+  /* demarmar */
+  /* transform: skew(20deg, 5deg); */
+
+  /* transsition */
+  transition-property: all;
+  transition-duration: 6s;
+  transition-timing-function: linear;
+}
+
+.aux:hover {
+  /* transform: translateY(0px); */
+  transform: rotate(90deg) skew(20deg);
+  background: green;
+}

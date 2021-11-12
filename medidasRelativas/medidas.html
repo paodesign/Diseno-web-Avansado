@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="medidas.css">
+    <script src="modernizr-custom.js"></script>
+    <title>Medidas Relativas</title>
+</head>
+
+<body>
+    <!-- Medidas: cajas, texto, iconos. hay 2 tipos de medidas:
+        Medidas Absolutas: te das la seguridad de mida eso, es una medida fija.
+        Medidas Relativas: son adaptables,cambian en funcion de diferentes factores.
+        En desarrollo web siempre se usan las medidas las medidas relativas nos permite dar mayor flexibilidad a las pantallas resposive.
+    -->
+
+    <!-- Medidas porcentuales:  -->
+    <div class="fija"></div>
+    <div class="porcentual"></div>
+
+    <!-- Medidas Absolutas: son in, cm, mm, pt, pc -->
+    <p class="in">Pulgadas</p>
+    <p class="cm">Centrimetros</p>
+    <p class="mm">Milimetros</p>
+    <p class="pt">Punto</p>
+    <p class="pc">Picas</p>
+
+    <!-- Medidas relativas: son em, ex, px, rem -->
+   <p>Parrafo Normal</p>
+   <p class="em">Parrafo EM</p>
+   <p class="ex">Parrafo EX</p>
+   <p class="px">Parrafo PX</p>
+
+   <div>
+       <p>em heredado</p>
+       <p class="rem">ejemplo rem</p>
+   </div>
+
+</body>
+
+</html>

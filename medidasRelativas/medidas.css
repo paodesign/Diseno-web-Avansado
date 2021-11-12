@@ -1,0 +1,120 @@
+/*  Medidas
+
+una buena practica es establecer la medidas de texto, anchura, altura de los elementos en el body. Se establece un tamaño universal en este caso para todas las fuentes dentro de la pagina.
+
+
+Medidas Relativas:
+tips:
+    * tamaño y la unidad van pegados. 16px porque o sino se anulan.
+    * pueden ser medidas en numeros entreros o decimales. si es un numero con cero se puede poner .5(0.5)
+    * diferentes unidades:
+    px -> pixeles son una medida relativa, no siempre los px tienen el mismo tamñao en todas las pantallas.
+        hay diferente tamaño de px, en pantallas de mas resolucion son mas grandes.
+        Los px se reescalan dependiendo del tapaño de la pantalla. No es lo mismo 1px en una pantalla pequeña que 1px en una pantalla mas grande de alta resolucion.
+        se adapta a la pantalla que estemos trabajando.
+        se utiliza por defecto en los texto la unidad px.
+    
+    em -> (con herencia) este tamaño de medida se basa en el tañamo de la M (m mayuscula) de la fuente que estemos utilizando.
+        se toma la M y de ahi se calcula la anchura de la misma de cuanto ocupa esa m. se genera 1em que se toma como rederencia.
+        em lo que hace es tomo lo que le llega por herencia y en base a eso le hace en calculo. lo reescala a la medida calculando con  m. ej 16px pasado 2em queda 32px,
+         multiplica por la canque le digamos lo que hereda del body.
+        para texto es rocomendable trabajar la unidad em, ya que permite un desarrolllo mas escalable ya que juega con la herencia.
+
+    rem -> (sin herencia) hace la rescala sin niguna herencia. calcula en funcion de lo que venga del body, r es de raiz. ej 16px pasados a 1rem  queda 16px.
+
+    ex -> este tamaño de medida se basa en la x (x minuscula) de la fuente que tenemos.
+        se toma la x y de ahi se calcula al altura de la misma. y desde ahi se genera 1ex, de la altura de la x. Es un tamaño mucho mas pequeño.
+
+*/
+
+/* 
+Medidad Absolutas:
+simpre quedan igual.
+    in: (inches o pulgadas) (ingleses usan .5in)
+        1in = 2.54cm
+    es comun encontrarla con medidad con 0.5in poruq son muy grandes.
+
+    cm: centimetros
+        1cm = 10mm
+
+    mm: milimetros
+        1mm = 0.1cm
+
+    pt: puntos
+        1pt = 0.35mm
+    se utiliza mucho para impresion.es el tamaño que va a tener cundo se imprime.
+
+    pc: picas
+        1pc = 12pt = 4.23mm
+
+tips:
+    *
+
+
+*/
+
+/* 
+Medidas Porcentuales: (Medidas Relativas y se usan en los media querys)
+ con las medidas porcentuales cuando como en este caso ponemos 50% siempre es respecto a su elemento contenedor. Es este caso es el 50% del body que vendria a ser el padre del div.
+ se una muchisimo en responsive design, pantallas que se adaptan a la pantalla que sea.
+ se crea un desarrollo flexible con los porcentajes. mayor capacidad de adaptacion.
+ ej
+ body 100%
+    div 50% toma el 50% del padre body 100% (50 - 100)
+        div 30%  toma el 30% del padre div 50% (30 - 50)
+ los margenes tambien pueden ser relativos como en el ej del 5%
+
+ */
+
+body {
+    font-size: 16px;
+}
+
+p.em {
+    font-size: 2em;
+}
+
+div p {
+    font-size: 2em;
+}
+
+div p.rem {
+    font-size: 3rem;
+}
+
+p.ex {
+    font-size: 0.5ex;
+}
+
+p.in {
+    font-size: .5in;
+}
+
+p.cm {
+    font-size: 1cm;
+}
+
+p.mm {
+    font-size: 10mm;
+}
+p.pt {
+    font-size: 30pt;
+}
+
+p.pc {
+    font-size: 3pc;
+}
+
+
+div.fija {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+div.porcentual {
+    height: 100px;
+    width: 50%;
+    background-color: green;
+    margin: 5%;
+}

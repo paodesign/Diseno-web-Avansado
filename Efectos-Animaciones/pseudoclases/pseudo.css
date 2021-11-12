@@ -1,0 +1,24 @@
+/* Pseudoclases
+
+estado de un elemento o uso que se esta haciendo de el.
+* hover
+* enlaces 
+* focus
+
+ */
+
+div {
+  border: 2px solid black;
+  width: 50%;
+  position: relative;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+div:hover {
+  background: orange;
+}
+
+a:hover{
+  color: red;
+}

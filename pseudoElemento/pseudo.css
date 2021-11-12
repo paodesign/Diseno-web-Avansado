@@ -1,0 +1,66 @@
+/* Pseudo Elementos : los elementos van asociados pseudo elementos, como si fueran imnvisible. el elemento y el pseudo elemento estan vinculados, se mueven juntos
+:before controla el pseudo elemento que tiene el parrafo.
+Un elemento tiene dos pseudo codigas el elemento  before y el elemento after.
+:before <elemento> :after
+No es obligatorio que el after vaya despues o el before antes. sirve para posicionar cosas en cualquier posicion, sigen al elemento porque estan vinculados.
+* Es obligatorio que tengan un content.
+* no es contenido del htmal, no son seleccionados por el usuaro, es parte del estilo.
+* estan para darla algo mas que tenga que ver con la contenido, se usa usualmente para imagens que acompañan el contenido. Tiene que ver con su apariencia visual.
+* siempre ponerle posicion relative
+* before tomo como referencia al punto inicial del elemento
+* after toma como referencia el punto final del elemento
+* se usan para poner iconos, imagenes que acompañan el elemento, se usan funtes vectoriales no son imagenes con etiquete img
+
+Pseudo clases
+Es el estado en el que se encuentra cierto elemento. Cada elemento puede tener diferentes estados: por ejemplo un enlace puede tener dos estados: visitado o esperando a que se visiste.
+Una caja de texto puede tener el estado focus o no.
+Estados de los enlaces:
+* link : pendiente de ser visitado
+* visited : link ya a sido visitado
+* hover : se activa cuando el raton posa por encima en computadoras, y en celulares cuando se hacer click. pseudo clase muy utilizada.
+* active : se activa cuando el click se esta ejecutando.
+* focus : permite al usuario saber en que parte de la pagina de encuentra.
+
+
+
+ */
+
+/*
+Pseudo Elementos
+
+p {
+    position: relative;
+}
+
+p:before {
+    content: "-";
+    top: 50px;
+    position: relative;
+    left: 150px;
+} */
+/* link pendiente de ser visitado : :link*/
+a#link1:link {
+    color: rgb(0, 255, 98);
+}
+/* link ya a sido visitado : visited */
+a#link1:visited {
+    color: rgb(255, 8, 0);
+}
+
+/* hover se activa cuando el raton pasa por encima */
+p:hover {
+    color: green;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* active se activa con el click, cuando el click se esta ejecutando */
+span:active {
+    color:green;
+}
+
+/*  focus se activa cuando enfoca en algun lugar */
+input:focus {
+    border-radius: 5px;
+    background: pink;
+}
